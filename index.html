@@ -16,12 +16,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #2196f3;
+        background-color: #3493ad;
         color: white;
         padding: 10px 20px;
         position: sticky;
         top: 0;
         z-index: 1000;
+        height: 40px;
       }
       .navbar a {
         color: white;
@@ -50,7 +51,7 @@
         height: 150px;
         border-radius: 50%;
         overflow: hidden;
-        margin: 50px auto 0;
+        margin: 50px auto 20px;
       }
       .profile-pic-container img {
         width: 100%;
@@ -58,17 +59,22 @@
       }
       .intro {
         text-align: center;
-        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 150px;
+        padding-right: 150px;
       }
       .intro h1 {
         margin: 0;
       }
       .section {
-        padding: 40px 20px;
+        padding: 30px 400px;
+        text-align: center;
       }
       .projects {
         background-color: #ffffff;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
         margin: 20px 0;
         padding: 20px;
       }
@@ -92,7 +98,6 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-brand">Quinn Morrison</div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -105,14 +110,14 @@
 
     <section id="home" class="section">
       <div class="profile-pic-container">
-        <!-- Replace 'profile-pic.jpg' with your own profile picture -->
-        <img src="profile-pic.jpg" alt="Your Name" />
+        <img src="./profilePic.jpg" alt="Quinn Morrison" />
       </div>
-      <div class="intro">
+      <div class="intro"">
         <h1>Software Engineer</h1>
         <p>
-          Specializing in React Native/JavaScript, containerized applications
-          written in Spring Framework/Java, and DevOps
+          Specializing in React Native and JavaScript, with a more recent focus
+          on containerized applications written in Spring Framework and Java.
+          I'm also currently doing a bit of DevOps using the Azure Platform.
         </p>
       </div>
     </section>
@@ -128,9 +133,15 @@
         focused on the Spring Framework and Java, with a bit of a DevOps
         background. In the past 2 years, I've been leading the management of
         production Azure pipelines and orchestrating deployment using GKE
-        clusters. Currently I'm a backendlead for the Carrier 360 Product at
+        clusters. Currently I'm a backend lead for the Carrier 360 Product at
         J.B. Hunt Transport Services, Inc. I thrive in fast-paced environments
         and am dedicated to optimizing application performance and scalability.
+      </p>
+      <p>
+        Outside of work, I like to spend my time strength training, cycling,
+        playing video games and cooking and spending time with my family. The
+        games I mainly play are Super Smash Bros. and Apex Legends. Hit me up on
+        Discord if you want to play!
       </p>
     </section>
 
@@ -138,10 +149,14 @@
       <h2>Projects</h2>
       <!-- Project entries -->
       <div class="projects">
-        <h3>Project Name</h3>
+        <h3>Carrier 360</h3>
         <p>
-          Description of the project goes here. Detail your role, the
-          technologies used, and any noteworthy challenges you overcame.
+          Carrier 360 is the leading open market application for moving freight
+          in North America. Whether you're as large as Amazon, or a small
+          carrier with only a few trucks and drivers, you can sign up for
+          Carrier 360 and start bidding on loads on our marketplace. We
+          integrate directly with DAT, and offer competitive rates for all of
+          our loads, with a built in bidding system.
         </p>
       </div>
       <!-- Repeat for other projects -->
@@ -153,7 +168,7 @@
     </section>
 
     <footer>
-      <p>Copyright © 2023 Your Name</p>
+      <p>Copyright © 2023 Darien Quinn Morrison</p>
     </footer>
 
     <script>
