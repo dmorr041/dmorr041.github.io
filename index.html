@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Quinn Morrison - Software Engineer</title>
     <style>
       body {
@@ -80,6 +83,34 @@
       }
       .projects h2 {
         margin-top: 0;
+      }
+      .fab.fa-linkedin {
+        color: #0e76a8;
+      }
+      .fa-solid.fa-phone {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .phone-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-link-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; /* This ensures vertical centering */
+      }
+
+      .contact-link:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .contact-link i {
+        font-size: 40px;
+        vertical-align: middle;
       }
       footer {
         background-color: #212121;
@@ -161,7 +192,7 @@
       <div class="profile-pic-container">
         <img src="./profilePic.jpg" alt="Quinn Morrison" />
       </div>
-      <div class="intro"">
+      <div class="intro">
         <h1>Software Engineer</h1>
         <p>
           Specializing in React Native and JavaScript, with a more recent focus
@@ -206,7 +237,7 @@
           Carrier 360 and start bidding on loads on our marketplace. We
           integrate directly with DAT, and offer competitive rates for all of
           our loads, with a built in bidding system. We offer notifications on
-          any relevant events regarding your bids, as well as 
+          any relevant events regarding your bids, as well as
         </p>
       </div>
       <!-- Repeat for other projects -->
@@ -214,7 +245,29 @@
 
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Connect with me on [LinkedIn/GitHub/Other social media links].</p>
+      <div class="phone-section">
+        <i class="fa-solid fa-phone"></i>
+        <p>(954)706-7156</p>
+      </div>
+      <div class="contact-link-container">
+        <span class="contact-link">
+          <a href="https://www.linkedin.com/in/dqm92/" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </span>
+        <span class="contact-link">
+          <a
+            href="https://discordapp.com/users/297625199904555010"
+            title="Discord">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </span>
+        <span class="contact-link">
+          <a href="https://github.com/dmorr041" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </span>
+      </div>
     </section>
 
     <footer>
