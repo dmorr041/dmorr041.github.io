@@ -42,7 +42,6 @@ body {
 }
 
 .intro-text {
-  margin-top: 60px;
   animation: fadeIn 3s ease-in-out;
 }
 
@@ -167,6 +166,10 @@ body {
 }
 
 .fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+#gallery-content.fade-out {
   animation: fadeOut 1s forwards;
 }
 

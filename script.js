@@ -3,17 +3,32 @@ document
   .addEventListener('click', function (event) {
     event.preventDefault()
 
-    // Fade out the main content
     var mainContent = document.getElementById('main-content')
     mainContent.classList.add('fade-out')
 
-    // Wait for the fade-out to complete
     setTimeout(function () {
-      mainContent.style.display = 'none' // Hide main content
+      mainContent.style.display = 'none'
 
-      // Show and animate the gallery
       var galleryContent = document.getElementById('gallery-content')
-      galleryContent.style.display = 'block' // Make the gallery visible
+      galleryContent.style.display = 'block'
       galleryContent.classList.add('slide-in')
-    }, 1000) // This timeout should match the duration of the fade-out animation
+    }, 1000)
+  })
+
+document
+  .getElementById('home-link')
+  .addEventListener('click', function (event) {
+    event.preventDefault()
+
+    var galleryContent = document.getElementById('gallery-content')
+    galleryContent.classList.add('fade-out')
+
+    setTimeout(function () {
+      galleryContent.style.display = 'none'
+      galleryContent.classList.remove('fade-out')
+
+      var mainContent = document.getElementById('main-content')
+      mainContent.style.display = 'block'
+      mainContent.classList.add('fade-in')
+    }, 1000)
   })
