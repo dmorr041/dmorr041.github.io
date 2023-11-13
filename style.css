@@ -244,3 +244,30 @@ body {
   transform: translate(-50%, -50%);
   display: none;
 }
+
+#background-content {
+  display: none;
+}
+
+#background-content p:first-of-type {
+  font-size: 28px;
+}
+
+#background-content p {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#background-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.fade-in-long {
+  animation: fadeIn 3s forwards;
+}
