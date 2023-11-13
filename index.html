@@ -9,34 +9,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav class="top-nav">
       <a href="#home" class="home-icon">Home</a>
       <div class="nav-links">
-        <a href="#projects">Projects</a>
+        <a href="#" id="projects-link">Projects</a>
         <a href="#background">Background</a>
       </div>
     </nav>
 
-    <main>
-      <div class="intro-text">
-        <p>Hi there. I'm Quinn.</p>
-        <p>I like to solve problems, game, and eat delicious food.</p>
-      </div>
-    </main>
+    <div class="background">
+      <main id="main-content">
+        <div class="intro-text">
+          <p>Hi there. I'm Quinn.</p>
+          <p>I like to solve problems.</p>
+        </div>
+        <div class="icon-stack">
+          <a href="https://github.com/dmorr041"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/dqm92/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://steamcommunity.com/profiles/76561199181087393/"
+            ><i class="fab fa-steam"></i
+          ></a>
+          <a href="https://discordapp.com/users/297625199904555010"
+            ><i class="fab fa-discord"></i
+          ></a>
+        </div>
+      </main>
 
-    <div class="icon-stack">
-      <a href="https://github.com/dmorr041"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/dqm92/"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a href="https://steamcommunity.com/profiles/76561199181087393/"
-        ><i class="fab fa-steam"></i
-      ></a>
-      <a href="https://discordapp.com/users/297625199904555010"
-        ><i class="fab fa-discord"></i
-      ></a>
+      <div id="gallery-content">
+        <div class="gallery">
+          <div class="card">
+            <figure>
+              <img src="images/forest.jpg" alt="Forest" />
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/forest-mountain.jpg" alt="Forest mountains" />
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/lavender-field.jpg" alt="Lavender Field" />
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/wooden-bridge.jpg" alt="Wooden Bridge" />
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
