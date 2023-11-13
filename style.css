@@ -84,19 +84,17 @@ body {
   margin: 5px 0;
   text-decoration: none;
   font-size: 32px;
-  opacity: 1; /* Start fully visible */
-  transform: translateY(0); /* Start at original position */
-  transition: transform 1s ease, opacity 1s ease; /* Smooth transition for transform and opacity */
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease, opacity 1s ease;
 }
 
-/* Apply the animation only to links after the first */
 .icon-stack a:not(:first-of-type) {
-  opacity: 0; /* Start invisible for all but the first link */
-  transform: translateY(-100%); /* Start above the first link */
+  opacity: 0;
+  transform: translateY(-100%);
   animation: fanOutAndFadeIn 1s ease forwards;
 }
 
-/* Different animation delays for each subsequent link */
 .icon-stack a:nth-of-type(2) {
   animation-delay: 0.2s;
 }
@@ -151,7 +149,6 @@ body {
   }
 }
 
-/* Fade out */
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -169,7 +166,6 @@ body {
   }
 }
 
-/* Applying animations */
 .fade-out {
   animation: fadeOut 1s forwards;
 }
