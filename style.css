@@ -169,16 +169,11 @@ body {
   animation: fadeOut 1s forwards;
 }
 
-#gallery-content.fade-out {
-  animation: fadeOut 1s forwards;
-}
-
 .fade-in {
   animation: fadeIn 1s forwards;
 }
 
 .slide-in {
-  display: block;
   animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
 }
 
