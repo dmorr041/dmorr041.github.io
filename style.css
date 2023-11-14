@@ -42,7 +42,6 @@ body {
 }
 
 .intro-text {
-  margin-top: 60px;
   animation: fadeIn 3s ease-in-out;
 }
 
@@ -84,19 +83,17 @@ body {
   margin: 5px 0;
   text-decoration: none;
   font-size: 32px;
-  opacity: 1; /* Start fully visible */
-  transform: translateY(0); /* Start at original position */
-  transition: transform 1s ease, opacity 1s ease; /* Smooth transition for transform and opacity */
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s ease, opacity 1s ease;
 }
 
-/* Apply the animation only to links after the first */
 .icon-stack a:not(:first-of-type) {
-  opacity: 0; /* Start invisible for all but the first link */
-  transform: translateY(-100%); /* Start above the first link */
+  opacity: 0;
+  transform: translateY(-100%);
   animation: fanOutAndFadeIn 1s ease forwards;
 }
 
-/* Different animation delays for each subsequent link */
 .icon-stack a:nth-of-type(2) {
   animation-delay: 0.2s;
 }
@@ -149,4 +146,123 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%) translate(-50%, -50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.slide-in {
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+
+:root {
+  --background: #f5f5f5;
+  --background-card: #6b626c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  position: relative;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gallery {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  left: 0px;
+  width: 200px;
+  height: 320px;
+  background-color: var(--background-card);
+  border-radius: 12px;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card:not(:first-child) {
+  margin-left: -45px;
+}
+
+.card:hover {
+  transform: translateY(-16px);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card:hover ~ .card {
+  left: 55px;
+}
+
+.card img {
+  height: 320px;
+  border-radius: 4px;
+  object-position: -24px 0px;
+}
+
+#gallery-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#background-content {
+  display: none;
+}
+
+#background-content p:first-of-type {
+  font-size: 28px;
+}
+
+#background-content p {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#background-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.fade-in-long {
+  animation: fadeIn 3s forwards;
 }
