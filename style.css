@@ -273,3 +273,17 @@ body {
 .fade-in-long {
   animation: fadeIn 3s forwards;
 }
+
+#carrier-360-summary {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 16px;
+}
+
+#carrier-360-summary p {
+  margin: 10px;
+}
