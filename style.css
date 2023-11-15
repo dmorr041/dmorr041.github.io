@@ -7,6 +7,13 @@ body {
   text-align: center;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -265,4 +272,53 @@ body {
 
 .fade-in-long {
   animation: fadeIn 3s forwards;
+}
+
+#carrier-360-summary {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 16px;
+}
+
+#carrier-360-summary p {
+  margin: 10px;
+}
+
+#open-research-summary {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 16px;
+}
+
+#open-research-summary p {
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-stack {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5; /* Or any color you prefer */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .icon-stack a {
+    display: inline-block;
+    margin: 0;
+    width: 25%;
+    text-align: center;
+  }
 }
