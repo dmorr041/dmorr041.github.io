@@ -146,3 +146,5 @@ document
       c360SummaryContent.classList.add('fade-in')
     }, 1000)
   })
+
+// wtf?
