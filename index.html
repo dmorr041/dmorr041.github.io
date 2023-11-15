@@ -12,13 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <nav class="top-nav">
-      <a href="#home" class="home-icon" id="home-link">Home</a>
-      <div class="nav-links">
-        <a href="#" id="projects-link">Projects</a>
-        <a href="#" id="background-link">Background</a>
-      </div>
-    </nav>
+    <div class="sticky">
+      <nav class="top-nav">
+        <a href="#home" class="home-icon" id="home-link">Home</a>
+        <div class="nav-links">
+          <a href="#" id="projects-link">Projects</a>
+          <a href="#" id="background-link">Background</a>
+        </div>
+      </nav>
+    </div>
 
     <div class="background">
       <div id="main-content">
@@ -44,17 +46,14 @@
 
       <div id="gallery-content">
         <div class="gallery">
-          <div class="card">
+          <div class="card" id="carrier-360-card">
             <figure>
               <img src="images/carrier-360.png" alt="Carrier 360" />
             </figure>
           </div>
-          <div class="card">
+          <div class="card" id="open-research-card">
             <figure>
-              <img
-                id="open-resarch-img"
-                src="images/open-research.png"
-                alt="Open Research" />
+              <img src="images/open-research.png" alt="Open Research" />
             </figure>
           </div>
         </div>
